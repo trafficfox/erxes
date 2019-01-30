@@ -92,8 +92,13 @@ class Settings extends React.Component {
             )}
             {this.renderBox(
               'Script manager',
-              '/images/icons/erxes-12.svg',
+              '/images/icons/erxes-07.svg',
               '/settings/scripts'
+            )}
+            {this.renderBox(
+              'Plan Details',
+              '/images/icons/erxes-15.svg',
+              '/settings/plans'
             )}
           </div>
         </Row>

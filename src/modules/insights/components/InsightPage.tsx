@@ -24,7 +24,7 @@ class InsightPage extends React.Component {
     const breadcrumb = [{ title: __('Insights'), link: '/insights' }];
 
     const content = (
-      <FullContent center={true}>
+      <FullContent center={true} align={true}>
         <div>
           <div>
             {this.renderBox(

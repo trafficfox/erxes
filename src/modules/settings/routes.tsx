@@ -10,6 +10,7 @@ import ImportHistory from './importHistory/routes';
 import IntegrationsRoutes from './integrations/routes';
 import LinkedAccountRoutes from './linkedAccounts/routes';
 import MainRoutes from './main/routes';
+import PlanRoutes from './plans/routes';
 import ProductService from './productService/routes';
 import ProfileRoutes from './profile/routes';
 import PropertiesRoutes from './properties/routes';
@@ -31,6 +32,7 @@ const routes = () => (
     <ScriptsRoutes key="ScriptsRoutes" />
     <IntegrationsRoutes key="IntegrationsRoutes" />
     <DealRoutes key="DealRoutes" />
+    <PlanRoutes key="PlanRoutes" />
     <ProductService key="ProductService" />
     <General key="General" />
     <PropertiesRoutes key="PropertiesRoutes" />

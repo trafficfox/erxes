@@ -68,7 +68,7 @@ class Status extends React.Component<{ versions: ProjectVersions }> {
     } = versions;
 
     const content = (
-      <FullContent center={true}>
+      <FullContent center={true} align={true}>
         <MiddleContent>
           {this.renderData('Erxes Status', erxesVersion)}
 
