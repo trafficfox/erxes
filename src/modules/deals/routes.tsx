@@ -1,6 +1,7 @@
 import queryString from 'query-string';
 import * as React from 'react';
 import { Redirect, Route } from 'react-router-dom';
+import { Insights } from './components';
 import { Home } from './containers';
 
 const deals = () => {
@@ -24,6 +25,7 @@ const routes = () => {
         path="/deals/board"
         component={boards}
       />
+      <Route key="deals/insights" path="/deals/insights" component={Insights} />
     </React.Fragment>
   );
 };
