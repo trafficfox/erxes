@@ -1,7 +1,7 @@
 import { Wrapper } from 'modules/layout/components';
 import { SidebarList } from 'modules/layout/styles';
 import * as React from 'react';
-import { NavLink, Route } from 'react-router-dom';
+import { NavLink, Redirect, Route } from 'react-router-dom';
 import Lost from './Lost';
 import Started from './Started';
 import Volume from './Volume';
@@ -30,6 +30,12 @@ class Insights extends React.Component<{ match: any }> {
         }
         content={
           <>
+            <Route
+              exact={true}
+              path={`${match.path}/`}
+              // tslint:disable-next-line:jsx-no-lambda
+              render={() => <Redirect to={`${match.path}/volume`} />}
+            />
             <Route path={`${match.path}/volume`} component={Volume} />
             <Route path={`${match.path}/started`} component={Started} />
             <Route path={`${match.path}/won`} component={Won} />
